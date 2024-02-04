@@ -1,0 +1,428 @@
+what is javascript?
+it is one of the top programming language,by learning this we can work as frontend developer,backend,full stack developer.
+this is used to design interactive we pages
+
+html is all about content in the web page
+javascript is all about behaviour
+
+=====================================================================================================================
+*console.log('Hello world');         used to print
+
+====================================================================================================================
+*'let'  is a variable 
+*'const' is a constant this doesnot change the value value for the variable
+====================================================================================================================
+
+*javascript is a dynamic language, dynamic means the type of variable can change at run time 
+====================================================================================================================
+*we have two type they are 
+   1) primitive types
+          - string
+          - boolean
+          - number
+          - undefined
+          - null
+   2) reference types
+          - object
+          - array
+          - function
+==========================================================================
+OBJECT ----
+
+* a person has different properties name,age,address when we are dealing with different variables we can put these in an object.
+============================
+let person ={
+     name:'nani',
+     age: 50
+};
+console.log(person);
+============================
+
+* we can change the values by using
+
+person.name ='mahesh';
+          or
+person['name'] = 'kalyan';
+=========================================================================
+ARRAYS----
+
+* some times we need to deal with the list of objects, we use array to store that list
+* array is an object in javascript
+* array is a datastructure that we use to represent list of items
+
+============================
+
+let selectedColours =['red','blue'];
+
+console.log(selectedColours);
+console.log(selectedColours[0]);                   --  output//  red
+selectedColours[2]='green';
+console.log(selectedColours);                      --  output//  red, blue, green
+console.log(selectedColours.legth);                --  output//  3
+===========================================================================
+
+FUNCTIONS----
+
+* Functions is one of the building blocks in javascript
+* Function is basically a set of statements that performs a task or calcualtes a value.
+============================
+
+function greet() {
+        console.log('hello world');
+}
+
+greet();          ---we can call this function by this line then the msg appears in console
+=============================
+function greet(name,lastName) {
+      console.log('hello' + name +' ' + lastName);
+}
+
+greet('jinna' , 'ramu'); 
+greet('mahesh', 'babu');
+
+ 
+* output////    hello jinna ramu
+                hello mahesh babu
+*here 'jinnabhai' is argument to the greet function 
+*and name is parameter to the greet function
+
+===============================
+
+function square(number){
+    return number * number;
+}
+
+console.log(square(2));             output // 4
+==============================================================================================================
+==============================================================================================================
+
+ OPERATORS ------
+*we have different type of operators in js
+
+    1) Arithmetic
+    2) Assignment
+    3) Comparison
+    4) logical
+    5) Bitwise
+
+===========================
+
+1) Arithmetic
+
+let x = 5;
+let y = 10;
+
+console.log(x + y);      --addition
+console.log(x - y);      --subtraction 
+console.log(x * y);      --multiplication
+console.log(x / y);      --division
+console.log(x % y);      --remainder
+console.log(x ** y);     --exponential
+console.log(x++);        --increment
+console.log(x--);        --decrement
+
+===========================
+2) Assignment
+
+let x = 5;
+
+x = x + 5;        or  x += 5;    
+
+===========================
+3) comparision
+
+let x =1;
+console.log(x > 0);
+console.log(x === 1);
+console.log(x !== 1);
+
+
+console.log( 1 === 1);    output // true          // === means strict equality both sides have same type and same value.
+console.log('1' === 1);   output // false
+
+console.log(1 == 1);      output // true         // == means lose eqaulityonly checks values are equal
+console.log('1'== 1);     output // false
+
+
+ TERNARY OPERATORS
+
+Q) if the customer gets more than 100 points he gets gold otherwise silver.
+
+let points = 110;
+let type = points > 100 ? 'gold' : 'silver' ;   
+console.log(type);                                     output // gold
+
+============================
+4) logical
+
+logical operators with booleans
+
+  a) logical AND(&&)    // returns true if both are true
+  b) logical OR(||)     // returns true if one of the operands are true
+  c) NOT(!)
+
+logical operators with non booleans
+
+
+ FALSY (false)
+ undefined
+ null
+ 0
+ false
+ ''
+ NaN
+* anything that is not falsy ---> Truthy
+
+==============================
+
+5) Bitwise 
+
+// 1 = 00000001
+// 2 = 00000010
+
+console.log(1 | 2); // bitwise OR
+console.log(1 & 2); // bitwise AND
+
+
+========================================================================CONTROL FLOW
+========================================================================
+
+1)  IF AND ELSE
+
+     if(  ) 
+        console.log();
+     else if(   )
+         console.log() ;
+     else 
+          console.log();
+
+=============================================
+2)   SWITCH AND CASE
+
+     let role;
+     switch (role) {
+
+         case 'guest':
+             console.log( );
+             break;
+         case 'moderator':
+              console.log();
+              break;
+         default:
+               console.log();
+      }
+==============================================
+LOOPS
+==============================================
+3) FOR LOOP
+
+ for( let i =0;i<5;i++){
+     console.log("hello world");
+ }                                    output // hello worls is printed 5 times
+
+===============================================
+4) WHILE LOOP 
+
+ let i =0 ;
+ while(i<=5){
+       if(i % 2 != 0)
+            console.log(i);
+       i++;
+ }                                       output // 1,3,5
+
+===============================================
+5) Do WHILE LOOP
+
+let i = 0;
+do{
+  if(i % 2 != 0) console.log(i);
+  i++;
+}while(i<=5);                               output // 1,3,5
+
+
+* do while is executed atleast once even the condition is false
+* that is not in while loop
+===============================================
+6) FOR IN
+
+const person = {
+   name: 'jinna',
+   age: 30
+};
+
+for (let key in person)
+  console.log(key,person[key]);            output// name jinna
+                                                    age  30
+================================
+
+const colours = ['red','blue','green'];
+
+for(let index in colours)
+   console.log(index,colours[index]);       output// o red
+                                                     1 blue
+                                                     2 green
+=================================
+7) FOR OF
+
+const colours = ['red','blue','green'];
+
+for(let color of colours)
+   console.log(color);              output // red
+                                              blue
+                                              green
+
+
+* use of for-in loop to iterate the properties of an object
+* use of for-of loop to iterate over the elements in an array
+==================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=========================================================================
+
+FINDING ELEMENTS REFERENCE TYPES
+
+const courses= [
+    { id: 1, name: "a"},
+    { id: 2,name: "b"},
+];
+const course = courses.find(function(course){
+          return course.name === "a";
+});
+console.log(course);                                  output// {id:1,name:"a"}
+
+=========================================================================
+const courses= [
+    { id: 1, name: "a"},
+    { id: 2,name: "b"},
+];
+const course = courses.findIndex(function(course){
+          return course.name === "a";
+});
+console.log(course); 
+==========================================================================
+REMOVING ELEMENTS FROM AN ARRAY
+
+const numbers = [1,2,3];
+numbers.pop();                     // removes the lsat element
+numbers.shift();                    //removes the first element
+numbers.splice(0,1);               // removes from index 0 , 1 element will be removed
+=========================================================================
+EMPTYING AN ARRAY
+
+let numbers = [1,2,3,4];
+let another = numbers;
+
+// solution 1
+numbers = [];                      output/// []
+console.log(another);              output // [1,2,3,4]
+
+////solution 2
+
+numbers.lenght=0;                     /// both the another and numbers will be empty
+
+///solution 3
+
+numbers.splice(0,numbers.length);      /// removes all the elements in the array
+
+
+========================================================================
+COMBINING AND SLICING ARRAYS
+
+
+combined = first.concat(second);
+
+slice = combined.slice(2,4);
+
+========================================================================
+SPREAD OPERATOR
+
+const combined =[....first,....second];
+=======================================================================
+ITERATING AN ARRAY
+
+======================================================================
+JIONING AN ARRAY
+
+const numbers=[1,2,3,4];
+const jioned = numbers.jion(',');
+console.log(joined);
+
+======================================
+
+const message= 'tjis is jignng';
+const parts=message.split(' ');
+console.log(parts);
+cosnt combined = parts.jion('-');
+console.log(combnied);
+===========================================================================================
+
+FUNCTIONS
+
+//FUNCTION DECLARATION
+
+function walk(){
+
+}
+=========================
+//FUNCTION EXPRESSION
+
+let run = function(){
+
+};
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+  
+
+
+
+
+
