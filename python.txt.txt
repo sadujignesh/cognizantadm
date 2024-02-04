@@ -1,0 +1,85 @@
+ python programmes:
+
+1)FIBONACCI SEREIS (using recursion) :
+
+   def Fibonacci(n):
+    if n < 0:
+        print("incorrect input")
+    elif n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    elif n == 2:
+        return 1
+    else:
+        return Fibonacci(n-1) + Fibonacci(n-2)
+   print(Fibonacci(2)) 
+                  
+
+
+  
+2)PALINDROME
+
+def ispalindrome(str):
+    for i in range(0,int(len(str)/2)):
+        if str[i] != str[len(str)-i-1]:
+            return False
+    return True
+s = "malayalam"
+ans = ispalindrome(s)
+if (ans):
+    print("yes")
+else:
+    print("no")
+
+
+
+
+3)PRIME NUMBER OR NOT
+
+num = int(input("enter a number : "))
+if num > 1:
+    for i in range(2,int(num/2)+1):
+        if (num%i) == 0:
+            print(num,"is not a prime number")
+            break
+    else:
+       print(num,"is a prime  number")
+else:
+    print(num,"is not a prime number")
+
+
+
+4)to find factorial of a number
+
+           RECURSIVE METHOD
+
+def factorial(n):
+    if n < 0:
+        return 0
+    elif n == 0:
+        return 1
+    elif n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+print(factorial(0))
+
+          ITERATIVE METHOD
+
+def factorial(n):
+    if n < 0:
+        return 0
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        fact = 1
+        for num in range(2, n + 1):
+            fact *= num
+        return fact
+print(factorial(5))
+
+
+
+5)armstrong number
+6)to find strong numbers in list
