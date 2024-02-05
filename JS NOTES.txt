@@ -276,6 +276,64 @@ for(let color of colours)
 * use of for-of loop to iterate over the elements in an array
 ==================================================================================================================
 
+FACTORY FUNCTIONS 
+
+* we can draw a circle with different radius
+
+function createCircle(radius) {
+    return {
+        radius,
+        draw() {
+            console.log("draw");
+        }
+    }
+}
+
+const circle1 = createCircle(1);
+console.log(circle);
+===========================================
+
+CONSTRUCTOR FUNCTIONS
+
+*in this we use pascal notation
+
+function Circle(radius){
+    this.radius=radius;
+    this.draw = function (){
+        console.log("draw");
+    }
+
+}
+const circle = new Circle(1);
+===========================================
+
+TEMPLATE LITERAL
+
+const messsage = `this is my 
+   first message`
+message                               output// this is my
+                                               first message
+
+===========================================================================================================
+
+ARRAYS
+==========================================================================================================
+
+
+const numbers = [3,4];
+numbers.push(5,6);
+console.log(numbers);       output /// [3,4,5,6]
+
+numbers.unshift(1,2);       // add elements in the start
+numbers.splice(2,0,'a','b');  add elements at index 2
+
+numbers.indexOf(1)          // find the elements
+
+* if it is avialable we get  output '0' otherwise we get '-1'
+
+
+numbers.includes(1)    output // true if it is available
+
 
 
 
