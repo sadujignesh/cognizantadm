@@ -334,44 +334,6 @@ numbers.indexOf(1)          // find the elements
 
 numbers.includes(1)    output // true if it is available
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 =========================================================================
 
 FINDING ELEMENTS REFERENCE TYPES
