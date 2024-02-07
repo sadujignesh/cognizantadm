@@ -1,0 +1,49 @@
+JAVA
+
+* The java compiler that comes with the JDK convert the source code into byte code 
+
+* java is a platform independent
+The meaning of Java platform-independent is that the Java compiled code(byte code) can run on all operating systems 
+ 
+* java is object oriented programming language
+=======================================================================
+
+WHAT IS OOPS?
+
+*** Object means a real-world entity such as a pen, chair, table, computer, watch, etc. 
+*** Object-Oriented Programming is a paradigm to design a program using classes and objects. It simplifies software development and maintenance by providing some concepts:
+
+* Object         ---- Any entity that has state and behavior is known as an object.
+* Class          ---- Collection of objects is called class. It is a logical entity. A class can also be defined as a blueprint from which you can create an   individual object. Class doesn't consume any space.
+
+Inheritance      ----- When one object acquires all the properties and behaviors of a parent object, it is known as inheritance. It provides code reusability. It is used to achieve runtime polymorphism.
+
+Polymorphism     ------If one task is performed in different ways, it is known as polymorphism.In Java, we use method overloading and method overriding to achieve polymorphism.
+
+Abstraction     ------- Hiding internal details and showing functionality is known as abstraction. For example phone call, we don't know the internal processing.  In Java, we use abstract class and interface to achieve abstraction.
+
+Encapsulation   ------ Binding (or wrapping) code and data together into a single unit are known as encapsulation. For example, a capsule, it is wrapped with different medicines.
+In java we use class to acheive encapsulation. Java bean is the fully encapsulated class because all the data members are private here.
+
+
+========================================================================
+
+STATIC BLOCK 
+
+static{
+
+}  
+
+this block is executed first rather than the main classs
+========================================================================
+
+STATIC METHODS
+
+static void method1{                                                   -----void is used because this wont return anthing
+
+}
+
+=======================================================================
+STATIC VARIABLES
+
+
