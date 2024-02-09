@@ -54,7 +54,7 @@ public class Person {
 
     // Getter
     public String getName() {
-        return this.name;
+        return name;
     }
 
     // Setter
@@ -133,3 +133,35 @@ class MysqlCon{
             }catch(Exception e){ System.out.println(e);}  
             }  
 }  
+
+=========================================================================================
+equals.IgnoreCase--
+=========================================================================================
+String college1 = "Stanford University";
+String college2 = "stanford university";
+
+if (college1.equalsIgnoreCase(college2)) {
+    System.out.println("The college names are equal ignoring case.");
+} else {
+    System.out.println("The college names are not equal.");
+}
+
+In this example, even though college1 and college2 are not exactly the same (due to different use of capital letters), the equalsIgnoreCase method would consider them as equal, and thus “The college names are equal ignoring case.” would be printed.
+
+This method is useful when you want to compare two strings for equality, disregarding their case.
+
+============================================================================================
+
+*  public String toString(), this is a method in Java that is used to convert an object into a string representation.
+============================================================================================
+Double.parseDouble()
+============================================================================================
+
+In Java, Double.parseDouble(String s) is a method from the Double class. It is used to convert a String into a double.
+String numberString = "123.45";
+double number = Double.parseDouble(numberString);
+System.out.println(number);  // This will print: 123.45
+===========================================================================================
+
+
+
