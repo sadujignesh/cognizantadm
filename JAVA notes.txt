@@ -178,14 +178,14 @@ try{
 }catch(Exception e) {
 }
 
-=========================================
+=================================================================================================
 creating custom exceptions
-=========================================
+================================================================================================
 
 
 
 
-===============================================
+===============================================================================================
 Q)   1. Task Description
 
 The objective is to create a Java class with a `main` method that uses the `Thread.sleep` method, which takes 1000 milliseconds as an argument. This method can throw a checked exception called `InterruptedException`. The initial approach is to use the `throws` keyword to declare that the `main` method can throw the `InterruptedException`.
